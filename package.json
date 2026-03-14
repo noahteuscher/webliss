@@ -1,6 +1,6 @@
 {
   "name": "webliss",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Browser observation CLI — console, network, and page event streaming via Chrome DevTools Protocol",
   "type": "module",
   "bin": {

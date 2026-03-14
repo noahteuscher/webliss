@@ -1,6 +1,6 @@
 # webliss
 
-Observe and interact with Chrome tabs from the terminal — console logs, network requests, page events, screenshots, accessibility snapshots, and more. No browser extension, no code changes.
+A lightweight CLI for observing and interacting with Chrome tabs from the terminal via CDP.
 
 ```
 npm install -g webliss
@@ -10,6 +10,19 @@ npm install -g webliss
 
 1. Open `chrome://inspect/#remote-debugging` in Chrome
 2. Toggle **"Allow remote debugging for this browser instance"** on
+
+## Interacting
+
+```bash
+webliss snap <target>                   # Accessibility tree snapshot
+webliss shot <target> [file]            # Screenshot
+webliss eval <target> <expression>      # Evaluate JavaScript
+webliss html <target> [selector]        # Get HTML
+webliss nav <target> <url>              # Navigate to URL
+webliss click <target> <selector>       # Click element
+webliss clickxy <target> <x> <y>        # Click at coordinates
+webliss type <target> <text>            # Type text
+```
 
 ## Observing
 
@@ -45,19 +58,6 @@ webliss localhost --pretty
 
 # JSON output (for piping)
 webliss localhost --json
-```
-
-## Interacting
-
-```bash
-webliss snap <target>                   # Accessibility tree snapshot
-webliss shot <target> [file]            # Screenshot
-webliss eval <target> <expression>      # Evaluate JavaScript
-webliss html <target> [selector]        # Get HTML
-webliss nav <target> <url>              # Navigate to URL
-webliss click <target> <selector>       # Click element
-webliss clickxy <target> <x> <y>        # Click at coordinates
-webliss type <target> <text>            # Type text
 ```
 
 ## Target resolution

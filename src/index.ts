@@ -100,7 +100,7 @@ const program = new Command();
 program
   .name("webliss")
   .description("Browser observation & control CLI via Chrome DevTools Protocol")
-  .version("2.0.0");
+  .version("1.0.0");
 
 // Internal daemon mode
 program
