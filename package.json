@@ -1,0 +1,33 @@
+{
+  "name": "webliss",
+  "version": "2.0.0",
+  "description": "Browser observation CLI — console, network, and page event streaming via Chrome DevTools Protocol",
+  "type": "module",
+  "bin": {
+    "webliss": "dist/index.js"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["chrome", "devtools", "cdp", "browser", "console", "network", "debugging", "cli"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/noahteuscher/webliss"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.10",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0"
+  }
+}
